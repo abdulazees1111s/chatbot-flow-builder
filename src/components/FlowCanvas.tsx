@@ -3,6 +3,7 @@ import ReactFlow, {
   ReactFlowProvider,
   addEdge,
   Background,
+  BackgroundVariant,
   Controls,
   useNodesState,
   useEdgesState,
@@ -143,7 +144,8 @@ const FlowBuilder = () => {
           onPaneClick={() => setSelectedNodeId(null)}
           fitView
         >
-          <Background variant="dots" gap={22} size={2.5} color="#6b7280" />
+          <Background variant={BackgroundVariant.Dots} gap={22} size={2.5} color="#6b7280"
+/>
           <Controls />
         </ReactFlow>
       </div>
