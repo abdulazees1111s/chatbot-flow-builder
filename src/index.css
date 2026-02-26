@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f5f7fa;
+}
+
+.panel {
+  padding: 20px;
+  background: white;
+  height: 100vh;
+  border-right: 1px solid #e5e7eb;
+}
+
+.node-item {
+  padding: 12px;
+  border: 1px solid #6366f1;
+  border-radius: 8px;
+  background: #eef2ff;
+  cursor: grab;
+  text-align: center;
+  font-weight: 500;
+}
+
+.node-item:hover {
+  background: #6366f1;
+  color: white;
+}
+
+.save-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 18px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.text-node {
+  padding: 14px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  width: 200px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  font-family: Inter, sans-serif;
+}
+
+.node-header {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #6366f1;
+  font-size: 14px;
+}
+
+.node-content {
+  font-size: 13px;
+  color: #374151;
+  word-break: break-word;
+}
+
+.handle {
+  width: 10px;
+  height: 10px;
+  background: #6366f1;
+  border-radius: 50%;
+}
+* { caret-color: black !important; }
+html, body, #root {
+  background-color: #f3f4f6;  /* light gray */
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  caret-color: black !important;
+}
