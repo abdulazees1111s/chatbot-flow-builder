@@ -23,7 +23,7 @@ const SaveButton = ({ onSave }: SaveButtonProps) => {
         zIndex: 10
       }}
     >
-      ?? Save
+      Save
     </button>
   );
 };

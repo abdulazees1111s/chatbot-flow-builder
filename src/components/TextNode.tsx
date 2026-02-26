@@ -23,7 +23,7 @@ const TextNode = ({ data }: any) => {
           fontSize: 14,
         }}
       >
-        ?? Send Message
+        Send Message
       </div>
 
       {/* Body */}
