@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# 🤖 Chatbot Flow Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern visual chatbot workflow builder built using **React** and **React Flow** that allows users to create chatbot conversation flows using drag-and-drop nodes and visual connections.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Project Overview
 
-## React Compiler
+Chatbot Flow Builder is a frontend application where users can visually design chatbot workflows without writing complex logic manually.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application provides an interactive canvas where users can:
 
-## Expanding the ESLint configuration
+- Add chatbot nodes
+- Connect conversation flows
+- Edit chatbot messages
+- Build chatbot structures visually
+- Save chatbot workflows
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project demonstrates concepts like:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Graph-based UI systems
+- Drag-and-drop interfaces
+- Dynamic state management
+- Component architecture
+- Flow validation
+- Interactive frontend engineering
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✅ Drag and Drop Nodes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Users can drag chatbot nodes from the sidebar and place them on the canvas.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## ✅ Visual Flow Connections
+
+Connect chatbot nodes visually using edges.
+
+---
+
+## ✅ Dynamic Message Editing
+
+Update chatbot message text directly from the settings panel.
+
+---
+
+## ✅ Flow Validation
+
+Ensures chatbot flows are properly connected before saving.
+
+---
+
+## ✅ Modern Responsive UI
+
+- Clean interface
+- Smooth interactions
+- Responsive layout
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React | Frontend Framework |
+| React Flow | Flow Builder |
+| JavaScript | Application Logic |
+| CSS / Tailwind CSS | Styling |
+| Vite | Development Environment |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+chatbot-flow-builder/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── FlowBuilder/
+│   │   ├── NodesPanel/
+│   │   ├── SettingsPanel/
+│   │   └── Navbar/
+│   │
+│   ├── nodes/
+│   │   └── TextNode.jsx
+│   │
+│   ├── styles/
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── vite.config.js
+└── README.md
